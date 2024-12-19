@@ -35,9 +35,9 @@ export function Providers({children}: PropsWithChildren) {
     <ThemeProvider
       attribute="class"
       defaultTheme={config.theme.mode}
-      forcedTheme={config.theme.mode} // Add this line to force the theme 
-      enableSystem={false} // Disable system theme to ensure config theme is used
-      disableTransitionOnChange
+      //forcedTheme={config.theme.mode} // Add this line to force the theme 
+      //enableSystem={false} // Disable system theme to ensure config theme is used
+      //disableTransitionOnChange
     >
       <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
         <ConvexProviderWithClerk client={convex} useAuth={useAuth}>

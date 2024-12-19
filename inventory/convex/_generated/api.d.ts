@@ -16,8 +16,10 @@ import type {
 import type * as clerk from "../clerk.js";
 import type * as email_templates_purchaseEmail from "../email/templates/purchaseEmail.js";
 import type * as email_templates_welcomeEmail from "../email/templates/welcomeEmail.js";
+import type * as equipment from "../equipment.js";
 import type * as http from "../http.js";
 import type * as sendEmails from "../sendEmails.js";
+import type * as staff from "../staff.js";
 import type * as users from "../users.js";
 
 /**
@@ -32,8 +34,10 @@ declare const fullApi: ApiFromModules<{
   clerk: typeof clerk;
   "email/templates/purchaseEmail": typeof email_templates_purchaseEmail;
   "email/templates/welcomeEmail": typeof email_templates_welcomeEmail;
+  equipment: typeof equipment;
   http: typeof http;
   sendEmails: typeof sendEmails;
+  staff: typeof staff;
   users: typeof users;
 }>;
 export declare const api: FilterApi<

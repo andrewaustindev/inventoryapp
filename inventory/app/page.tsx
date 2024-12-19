@@ -6,6 +6,7 @@ import FAQ from "@/components/landing-page/faq";
 import CTA from "@/components/landing-page/cta-section";
 import { Footer } from "@/components/footer";
 import TestimonialSingle from "@/components/landing-page/testimonial-single";
+import { Header } from "@radix-ui/react-accordion";
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Header />
       <HeroWithImage />
       <Problem />
       <Features />
